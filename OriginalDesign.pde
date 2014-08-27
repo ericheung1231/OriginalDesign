@@ -1,19 +1,19 @@
 void setup()
 {
-  size(400,400)
+  size(400,400);
+  background (191, 230, 224);
+  noLoop();
 }
 void draw()
 {
-  background (191, 230, 224);
+//var skin = color(245, 202, 137);
+//var cheeks = color (224, 112, 112);
 
-var skin = color(245, 202, 137);
-var cheeks = color (224, 112, 112);
-
-fill(skin);
+fill(245, 202, 137);
 ellipse(200,170, 190,225);
 
 translate(15,0);
-fill(skin);
+fill(245, 202, 137);
 stroke(0, 0, 0);
 beginShape();
     curveVertex(100,200);
@@ -55,15 +55,15 @@ endShape();
 fill(38, 36, 33);
 stroke(5, 5, 5);
 beginShape();
-    vertex(108,250);
-    vertex(108,220);
-    vertex(103,125);
+    curveVertex(108,250);
+    curveVertex(108,220);
+    curveVertex(103,125);
     curveVertex(140,68);
     curveVertex(200,45);
     curveVertex(260,68);
-    vertex(297,125);
-    vertex(292,220);
-    vertex(292,250);
+    curveVertex(297,125);
+    curveVertex(292,220);
+    curveVertex(292,250);
 endShape();
 
 noStroke();
@@ -72,18 +72,18 @@ ellipse(190,96,110,100);
 
 fill(26, 23, 20);
 beginShape();
-    vertex(108,250);
-    vertex(108,220);
-    vertex(103,125);
+    curveVertex(108,250);
+    curveVertex(108,220);
+    curveVertex(103,125);
     curveVertex(150,68);
     curveVertex(230,70);
     curveVertex(270,97);
-    vertex(293,130);
-    vertex(292,220);
-    vertex(292,250);
+    curveVertex(293,130);
+    curveVertex(292,220);
+    curveVertex(292,250);
 endShape();
 
-fill(skin);
+fill(245, 202, 137);
 beginShape();
     curveVertex(200,90);
     curveVertex(200,90);
@@ -106,7 +106,7 @@ beginShape();
     curveVertex(113,219);
 endShape();
 strokeWeight(2);
-stroke(skin);
+stroke(245, 202, 137);
 beginShape();
     vertex(200,91);
     vertex(287,219);
@@ -114,7 +114,7 @@ beginShape();
     vertex(200,91);
 endShape();
 
-//shading
+// shading
 noStroke();
 fill(46, 4, 4,40);
 beginShape();
@@ -244,9 +244,9 @@ ellipse(161, 169, 5,5);
 //nose
 translate(-3,-5);
 fill(25, 26, 25,50);
-var nostrils = 0.9;
+float nostrils = 0.9;
 scale(nostrils);
-var bob = 22;
+int bob = 22;
 translate(bob,bob+3);
 bezier(205,240,215,230,219,235,218,239);
 bezier(195,240,185,230,181,235,182,239);
@@ -262,7 +262,7 @@ stroke(255, 255, 255,75);
 strokeWeight(4);
 line(197,188,195,215);
 noStroke();
-fill(skin);
+fill(245, 202, 137);
 ellipse(200,227,25,20);
 fill(247, 236, 207,100);
 ellipse(195,222,13,10);
