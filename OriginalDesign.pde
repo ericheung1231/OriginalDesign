@@ -2,7 +2,7 @@ int scal, scrnW, scrnH;
 float eWidth, eHeight;
 public void setup()
 {
-  scal = 40;
+  scal = 80;
   scrnW = 20*scal;
   scrnH = 16*scal;
   size(scrnW, scrnH);
