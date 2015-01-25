@@ -22,6 +22,7 @@ public void draw()
   else
   {
     stroke(0);
+    strokeWeight(5);
     //eWidth = 20+5000*(1/dist(mouseX,mouseY,scrnW/2,scrnH/2));
     eHeight = mouseX;
     eWidth = mouseY;
