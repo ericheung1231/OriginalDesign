@@ -6,6 +6,6 @@ public void setup()
 
 public void draw()
 {
-    fill(mouseX, mouseY, mouseX);
+    fill(abs(mouseX-mouseY), abs(mouseY-mouseX), abs(mouseX));
     ellipse(mouseX, mouseY, mouseX, mouseY);
 }
