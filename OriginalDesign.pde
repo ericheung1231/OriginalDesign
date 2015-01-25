@@ -2,6 +2,7 @@ int scal, scrnW, scrnH;
 float eWidth, eHeight;
 public void setup()
 {
+    frameRate(120);
   scal = 80;
   scrnW = 20*scal;
   scrnH = 16*scal;
@@ -22,7 +23,7 @@ public void draw()
   else
   {
     stroke(0);
-    strokeWeight(10);
+    //strokeWeight(10);
     //eWidth = 20+5000*(1/dist(mouseX,mouseY,scrnW/2,scrnH/2));
     eHeight = mouseX;
     eWidth = mouseY;
