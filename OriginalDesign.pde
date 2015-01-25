@@ -5,7 +5,7 @@ public void setup()
   scal = 40;
   scrnW = 20*scal;
   scrnH = 16*scal;
-  size(scrnW, scrnH, OPENGL);
+  size(scrnW, scrnH);
   background(255);
 }
 
