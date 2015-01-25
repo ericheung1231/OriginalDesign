@@ -3,7 +3,7 @@ float eWidth, eHeight;
 public void setup()
 {
     frameRate(240);
-  scal = 80;
+  scal = 40;
   scrnW = 20*scal;
   scrnH = 16*scal;
   size(scrnW, scrnH);
